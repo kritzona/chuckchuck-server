@@ -7,6 +7,7 @@
 import app from '../lib/app'
 import _debug from 'debug'
 import http from 'http'
+import socketIo from 'socket.io'
 
 const debug = _debug('chuckchuck-server.local:server')
 
@@ -22,6 +23,12 @@ app.set('port', port)
  */
 
 const server = http.createServer(app)
+export const io = socketIo(server, {
+  cors: {
+    origin: '*',
+    methods: ['GET', 'POST'],
+  },
+})
 
 /**
  * Listen on provided port, on all network interfaces.
