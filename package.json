@@ -6,8 +6,13 @@
     "start": "nodemon --exec babel-node ./bin/www.js"
   },
   "dependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
     "argon2": "^0.27.1",
     "bufferutil": "^4.0.3",
+    "compression": "^1.7.4",
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
     "debug": "~2.6.9",
@@ -16,13 +21,9 @@
     "jose": "^3.5.4",
     "mongoose": "^5.11.14",
     "morgan": "~1.9.1",
-    "socket.io": "^3.1.1",
-    "utf-8-validate": "^5.0.4",
-    "@babel/cli": "^7.12.10",
-    "@babel/core": "^7.12.10",
-    "@babel/node": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
     "nodemon": "^2.0.7",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "socket.io": "^3.1.1",
+    "utf-8-validate": "^5.0.4"
   }
 }
